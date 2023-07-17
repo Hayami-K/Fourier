@@ -1,0 +1,5 @@
+氏名：中村颯我
+学生証番号：154091
+DiscreteFourier1dTransformationとDiscreteFourier2dTransformation（transformを除く）のプログラム記述を完成
+
+継承の仕組みを大まかに理解できるようになったことで、ファイル構成を大まかに理解できるようになった。まだ、全体像の把握をしきれているわけではないので、その把握に努めたい。

@@ -1,0 +1,4 @@
+氏名: 高倉歩
+学生証番号: 153786
+Fourier2dModel.javaの修正
+FourierPaneModel.javaの修正

@@ -1,0 +1,14 @@
+氏名：中村颯我
+学生証番号：154091
+eclipseでのJunitを使用した単体テストに関する調査を実施。
+いくつかの資料を挙げ共有したが（以下にリンクあり）、自分たちで実装できるラインまで理解し切ることはできなかった。
+
+FourierPaneModelのプログラム記述を実施。PaneModelとの違いなどについて理解しきれず、実装しきれなかったので来週までにできる範囲で行う。
+
+
+Junit 単体テスト
+https://saycon.co.jp/portal-for-newcomer/ide/netbeans/netbeans8
+https://qiita.com/ryuutamaehara/items/c8efb304b73cc0542e6f
+https://sls.ideal-growth.jp/23/lesson/461/learning
+https://style.potepan.com/articles/35103.html
+https://style.potepan.com/articles/35103.html

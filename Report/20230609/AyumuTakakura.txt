@@ -1,0 +1,4 @@
+氏名: 高倉歩
+学生証番号: 153786
+以下作業内容
+FourierPaneController.javaの作成

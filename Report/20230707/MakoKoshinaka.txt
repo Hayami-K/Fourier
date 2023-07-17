@@ -1,0 +1,4 @@
+氏名：越仲真子
+学生証番号：153524
+内容
+fourier1dmodel実装、programのhtml文書の作成開始
