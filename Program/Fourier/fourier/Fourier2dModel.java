@@ -337,20 +337,16 @@ public class Fourier2dModel extends FourierModel {
 	/**
 	 *
 	 *
-	 * @author Nakamura
-	 * @version 1.1
-	 * @date 7/15
+	 * @author Nakamura Hayami
+	 * @version 1.2
+	 * @date 7/17
 	 */
 	public void doAllSpectrum() {
-		interactivePowerSpectrum = powerSpectrum;
-		interactiveRealPart = realPart;
-		interactiveImarginaryPart = imaginaryPart;
-		interactiveYuvSourceData = yuvSourceData;
-		DiscreteFourier2dTransformation anInverseTransform = new DiscreteFourier2dTransformation(interactiveRealPart,
-				interactiveImarginaryPart);
-		double[][] inverseRealPart = anInverseTransform.inverseRealPart();
-		// double[][] inverseImaginaryPart = anInverseTransform.inverseImaginaryPart();
-		inverseData = inverseRealPart;
+		DiscreteFourier2dTransformation aTransform = new DiscreteFourier2dTransformation(sourceData);
+		interactivePowerSpectrum = aTransform.normalizedLogarithmicPowerSpectrum();
+		interactiveRealPart = aTransform.realPart();
+		interactiveImarginaryPart = aTransform.imaginaryPart();
+		computeInverseData();
 		this.actionPerformed(null);
 	}
 

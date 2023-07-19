@@ -36,8 +36,8 @@ format:
 	@rm -f $(STYLE_CONF)
 
 app: install
-	@xattr -cr ./fourier.app
-	open ./fourier.app
+	@xattr -cr ./Fourier.app
+	open ./Fourier.app
 
 check: if while for ifTrue ifFalse ifThenElse whileTrue whileFalse forEach
 	@:

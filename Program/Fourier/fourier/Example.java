@@ -10,13 +10,13 @@ public class Example extends Object {
 	 */
 	public static void main(String[] arguments) {
 		// 離散フーリエ1次元変換の例題群を実行する。
-		//Example1d.main(arguments);
+		Example1d.main(arguments);
 
 		// 離散フーリエ2次元変換の例題群を実行する。
-		 //Example2d.main(arguments);
+                Example2d.main(arguments);
 
 		// 離散フーリエ1次元変換のモデルを開く。
-		//(new Fourier1dModel()).open();
+		(new Fourier1dModel()).open();
 
 		// 離散フーリエ2次元変換のモデルを開く。
 		(new Fourier2dModel()).open();
