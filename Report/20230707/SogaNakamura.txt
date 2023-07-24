@@ -1,0 +1,4 @@
+氏名：中村颯我
+学生証番号：154091
+Fourier2dModel.javaのopenメソッドの細かい部分の調整を行い、プログラムを実行できるようにした。
+また、showPopupMenuメソッドをFourier1dModel.javaを参考に書き、2dでも実行できるようにした。

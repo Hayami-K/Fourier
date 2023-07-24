@@ -13,6 +13,7 @@ import javax.swing.JPopupMenu;
 
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
+import javax.swing.JLabel;
 import javax.swing.JMenuItem;
 
 /**
@@ -349,6 +350,7 @@ public class Fourier1dModel extends FourierModel {
 		BufferedImage imageSourceData = FourierModel.generateImageForData(sourceData);
 		this.sourceDataPaneModel = new FourierPaneModel(imageSourceData, "sourceData", this);
 		FourierPaneView aView = new FourierPaneView(sourceDataPaneModel, new FourierPaneController());
+	
 		this.sourceDataPaneModel.addDependent(aView);
 		aPanel.add(aView);
 
@@ -377,29 +379,25 @@ public class Fourier1dModel extends FourierModel {
 	/**
 	 * ソースデータの配列を設定する
 	 * 
-	 * @author
+	 * @author Takakura
 	 * @version
-	 * @date
+	 * @date 7/21
 	 * @param sourceDataArray
 	 */
-	public void setSourceData(double[] sourceDataArray) {
-		this.sourceData = sourceDataArray;
-		DiscreteFourier1dTransformation aTransformation = new DiscreteFourier1dTransformation(sourceData);
-		this.realPart = aTransformation.realPart();
-		this.imaginaryPart = aTransformation.imaginaryPart();
-		this.powerSpectrum = aTransformation.powerSpectrum();
-		this.interactiveRealPart = new double[1024];
-		// 0で埋める
-		Arrays.fill(interactiveRealPart, 0.0);
-		this.interactiveImaginaryPart = new double[1024];
-		Arrays.fill(interactiveImaginaryPart, 0.0);
-		this.interactivePowerSpectrum = new double[1024];
-		Arrays.fill(interactivePowerSpectrum, 0.0);
-		this.inverseData = new double[1024];
-		Arrays.fill(inverseData, 0.0);
-		previousX = -1;
-		return;
-	}
+    public void setSourceData(double[] sourceDataArray) {
+            this.sourceData = sourceDataArray;
+            DiscreteFourier1dTransformation aTransformation = new DiscreteFourier1dTransformation(sourceData);
+            this.realPart = aTransformation.realPart();
+            this.imaginaryPart = aTransformation.imaginaryPart();
+            this.powerSpectrum = aTransformation.powerSpectrum();
+            FourierModel.fill(interactiveRealPart = new double[1024],0.0);
+            // 0で埋める
+            FourierModel.fill(interactiveImaginaryPart = new double[1024],0.0);
+            FourierModel.fill(interactivePowerSpectrum = new double[1024],0.0);
+            FourierModel.fill(inverseData = new double[1024],0.0);
+            previousX = -1;
+            return;
+        }
 
 	/**
 	 * メニュー画面の表示

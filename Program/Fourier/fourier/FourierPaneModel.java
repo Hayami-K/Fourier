@@ -102,9 +102,9 @@ public class FourierPaneModel extends pane.PaneModel {
 	 * @param aString
 	 * @param anActonEvent
 	 */
-	public void actionPerformed(ActionEvent anActonEvent){
-		
-	}
+	public  void actionPerformed(ActionEvent anActonEvent){
+
+	};
 
 	/**
 	 * 現在のユーザからインタラクションを受け付ける状態かどうかを返す。
@@ -194,4 +194,5 @@ public class FourierPaneModel extends pane.PaneModel {
 	public void showPopupMenu(MouseEvent aMouseEvent, FourierPaneController aController) {
 		listener.showPopupMenu(aMouseEvent, aController);
 	}
+
 }

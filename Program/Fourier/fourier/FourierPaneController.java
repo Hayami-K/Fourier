@@ -48,6 +48,7 @@ public class FourierPaneController extends pane.PaneController {
 	 */
 	@Override
 	public void mouseClicked(MouseEvent aMouseEvent) {
+
 		super.mouseClicked(aMouseEvent);
 
 	}
@@ -63,6 +64,7 @@ public class FourierPaneController extends pane.PaneController {
 	 */
 	@Override
 	public void mouseDragged(MouseEvent aMouseEvent) {
+
 		super.mouseDragged(aMouseEvent);
 	}
 

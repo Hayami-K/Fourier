@@ -1,0 +1,5 @@
+氏名: 高倉歩
+学生証番号: 153786
+以下作業内容
+Fourier1dModel.java及びFourier2dModel.javaの一部メソッドの簡素化
+リハーサル及び発表

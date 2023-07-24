@@ -12,6 +12,14 @@ clean:
 
 test:
 	$(ANT) test
+	
+# 以下を追加、単体テストのために。
+unittest:
+	$(ANT) unittest
+
+# 以下を追加、アサーションのために。
+assert:
+	$(ANT) assert
 
 install:
 	$(ANT) install
@@ -36,8 +44,8 @@ format:
 	@rm -f $(STYLE_CONF)
 
 app: install
-	@xattr -cr ./Fourier.app
-	open ./Fourier.app
+	@xattr -cr ./fourier.app
+	open ./fourier.app
 
 check: if while for ifTrue ifFalse ifThenElse whileTrue whileFalse forEach
 	@:

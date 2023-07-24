@@ -1,0 +1,4 @@
+氏名：速水健杜
+学生証番号：154217
+Fourier2dModelの作成（setsorsedata,actihonperform）
+セットソースデータの中身が冗長になってしまったので、FourierModelのメソッドを使い短くできた
